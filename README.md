@@ -17,3 +17,14 @@ class Emprunt(BaseModel):
 @app.post("/as")
 def lancer_emprunt(data: Emprunt):
     return {"message": f"Emprunt enregistré pour {data.emprunteur} par {data.nom}"}
+#include <stdio.h>
+struct Emprunt {
+    char nom[20];
+    char emprunteur[20];
+};
+
+int main() {
+    struct Emprunt e = {"IA", "Zoubirou"};
+    printf("Nom: %s, Emprunteur: %s\n", e.nom, e.emprunteur);
+    return 0;
+}
